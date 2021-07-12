@@ -268,7 +268,3 @@ function ResetEveryThing(e) {
 
 }
 
-// Issues
-// 1.Negative values should not be accepted on BILL AND NUMBEROFPEOPLE
-// 2.Check for aplhabets on every input fields
-// 3.Reset Values for alhpabet outline
