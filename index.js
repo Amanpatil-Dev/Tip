@@ -1,4 +1,3 @@
-console.log('connected')
 
 const BillAmount = document.querySelector('#bill')
 const Tipcontainer = document.querySelector('.tip--container')
@@ -131,7 +130,6 @@ NoofPerson.addEventListener('input', (e) => {
 
 
         if (NoofPerson.value != 0) {
-            console.log(NoofPerson.value)
 
             if (TipC == undefined && Total == "") {
 
@@ -152,7 +150,6 @@ NoofPerson.addEventListener('input', (e) => {
 
         } else if (NoofPerson.value == 0) {
 
-            console.log(NoofPerson.value)
             const Checkerror = document.querySelector('.error').classList
 
             if (Checkerror.contains('d-none')) {
@@ -197,7 +194,6 @@ function SetTotal(e) {
             } else {
                 Total.textContent = `$` + e.target.value
                 const ResetBtn = document.querySelector('.reset')
-                console.log(ResetBtn)
             }
 
 
@@ -214,7 +210,6 @@ function SetTotal(e) {
 }
 
 const CalculateTip = (tip,) => {
-    console.log(tip, BillAmount.value)
     const Tip = (BillAmount.value / 100) * tip;
     return Tip.toFixed(2)
 
@@ -225,9 +220,7 @@ const CalculateTip = (tip,) => {
 const FinalTip = (tip, bill, NumofPep) => {
 
     const firstLev = bill / NumofPep
-    console.log(firstLev)
     const secondLev = firstLev + CalculateTip(tip) / NumofPep
-    console.log(secondLev)
 
     return secondLev.toFixed(2)
 
