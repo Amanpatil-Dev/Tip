@@ -60,18 +60,13 @@ Tipcontainer.addEventListener('click', (e) => {
 
         })
 
-
         Link.classList.add('active-tip')
 
         TipC = Link.dataset.tip
 
         if (NoofPerson.value != 0) {
             RenderTotal()
-
         }
-
-
-
     }
 
 })
@@ -88,8 +83,6 @@ Custom.addEventListener('input', (e) => {
 
     })
    
-
-
     TipC = e.target.value
     if (NoofPerson.value != 0) {
 
@@ -124,11 +117,6 @@ NoofPerson.addEventListener('input', (e) => {
             ResetBtn.classList.remove('disable')
         }
         
-
-
-
-
-
         if (NoofPerson.value != 0) {
 
             if (TipC == undefined && Total == "") {
@@ -141,8 +129,6 @@ NoofPerson.addEventListener('input', (e) => {
 
             }
 
-
-
             if (!Checkerror.contains('d-none')) {
                 removeErrorZero()
             }
@@ -153,22 +139,13 @@ NoofPerson.addEventListener('input', (e) => {
             const Checkerror = document.querySelector('.error').classList
 
             if (Checkerror.contains('d-none')) {
-
                 AddErrorZero()
-
             } else {
                 document.querySelector('.error').classList.add('d-none')
-
             }
             InitTotal()
-
-
         }
-
     }
-
-
-
 })
 
 
